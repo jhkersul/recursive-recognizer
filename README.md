@@ -8,10 +8,11 @@ Developed using Elixir programming language.
 
 ## Testing if a string is accepted
 
-To test if a string is accepted you have to use `Recognizer.recognize_chain` function. Passing the grammar rules and the string that you wanna check if it's recoganized.
+To test if a string is accepted you have to use `Recognizer.recognize_chain` function. Passing the grammar production rules and the string that you wanna check if it's recoganized.
 
 ``` elixir
-# The grammar rules that defines the grammar that you wanna check
+# The grammar production rules that defines the grammar that you wanna check
+# A production rule is like "S" -> "aAS"
 gram_rules = [
   %{ "S" => ["a", "A", "S"] },
   %{ "S" => ["a"] },
